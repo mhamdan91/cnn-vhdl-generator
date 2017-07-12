@@ -1,0 +1,2 @@
+# cnn_vhdl_generator
+AUTOMATIC VHDL GENERATION FOR CNN MODELS
