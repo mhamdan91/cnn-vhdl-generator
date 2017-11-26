@@ -1,5 +1,5 @@
 # cnn_vhdl_generator
-AUTOMATIC VHDL GENERATION FOR CNN MODELS
+## AUTOMATIC VHDL GENERATION FOR CNN MODELS
 
 "Tool Name :  Automatic VHDL Generation for Small Scale Convolutional Neural Networks"
 + " Description: This tool generates VHDL code for hand-tuned and benchmarked models like LeNet"
@@ -8,7 +8,7 @@ AUTOMATIC VHDL GENERATION FOR CNN MODELS
 + " OS :  Any machine supports Java"
 
 
-This version of the tool offers the following
+### This version of the tool offers the following
  ---------------------------------------- 
 + " This version supports the following"
 + " Layers :  Up to 16 "
@@ -21,7 +21,7 @@ This version of the tool offers the following
 
 ----------------------------------------
 
-##Get Started with the Generation Tool
+### Get Started with the Generation Tool
 
 * In the main (first) window, select network type and target platform then click on "Customize and build model"
 * In the Configuration Block do the following
