@@ -20,6 +20,7 @@ This version of the tool offers the following
 + " Classifier :  SoftMax"
 
 ----------------------------------------
+
 ##Get Started with the Generation Tool
 
 * In the main (first) window, select network type and target platform then click on "Customize and build model"
@@ -35,7 +36,7 @@ This version of the tool offers the following
 	  you can use the sample random weights provided to you for the provided configuration file
 	* The tool will automatically check and verify the loaded file to see if it matches the configuration file as well as chosen
 	  weight and bias sizes and representation 
-    	* If loaded file passes the validation and checking test, the "Generate VHDL files" button will get enabled automatically
+	* If loaded file passes the validation and checking test, the "Generate VHDL files" button will get enabled automatically
 	  and then Generate Testbench button will get enabled automatically as well. 
 	* Generated files can be found in the same directoy in a folder called "generated_files".
 	 
