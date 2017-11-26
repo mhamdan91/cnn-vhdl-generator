@@ -10,7 +10,7 @@ AUTOMATIC VHDL GENERATION FOR CNN MODELS
 
 
 This version of the tool offers the following
-+" ---------------------------------------- "
+" ---------------------------------------- "
 + " This version supports the following"
 + " Layers :  Up to 16 "
 + " Feature-maps :  Up to 1024 "
