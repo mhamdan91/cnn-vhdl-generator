@@ -40,7 +40,7 @@
 	  and then Generate Testbench button will get enabled automatically after generating the VHDL files. 
 	* Generated files can be found in the same directoy in a folder called "generated_files".
 	
-## Publication
-[VHDL generator for a high performance convolutional neural network FPGA-based accelerator (http://ieeexplore.ieee.org/document/8279827/)
+### Publication
+* [VHDL Generator for a High Performance Convolutional Neural Network FPGA-base Accelerator](http://ieeexplore.ieee.org/document/8279827/)
 ------------------------------------------
 # Created by: Muhammad K.A. Hamdan	 
