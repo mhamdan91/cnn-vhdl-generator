@@ -27,7 +27,7 @@
 * In the Configuration Block do the following:
 	* You can manually build your network, where you can specify all the network parameters from the drop lists in the table
 	* You can load a pre-configured model by clicking on "load configuration" button
-	* Once your done with configuration, click on "Validate Model Entries" to check the validity of your model
+	* Once you are done with configuration, click on "Validate Model Entries" to check the validity of your model
 	* You can save your manually configured model by clicking on "Save Configuration" button
 	* Click on "load weights and biases" button to load weights and biases
  * In Weights and Biases Incorpration windown, do the following:
