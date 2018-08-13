@@ -3,7 +3,7 @@
 
 "Tool Name :  Automatic VHDL Generation for Small Scale Convolutional Neural Networks"
 + " Description: This tool generates VHDL code for hand-tuned and benchmarked models like LeNet"
-+ "System requirements:"
++ " System requirements:"
 + " Max needed RAM : 2GB "
 + " OS :  Any operating system supports Java 8 or higher"
 
