@@ -1,4 +1,4 @@
-# cnn_vhdl_generator
+# cnn_vhdl_generator - PLEASE CITE THE PAPER BELOW IF YOU USE THIS WORK
 ## AUTOMATIC VHDL GENERATION FOR CNN MODELS
 
 "Tool Name :  Automatic VHDL Generation for Small Scale Convolutional Neural Networks"
@@ -40,7 +40,7 @@
 	  and then Generate Testbench button will get enabled automatically after generating the VHDL files. 
 	* Generated files can be found in the same directoy in a folder called "generated_files".
 	
-### Publication
+### Publication - PLEASE CITE THIS PAPER IF YOU USE THIS WORK
 * [VHDL Generator for a High Performance Convolutional Neural Network FPGA-base Accelerator](http://ieeexplore.ieee.org/document/8279827/)
 ------------------------------------------
 # Created by: Muhammad K.A. Hamdan	 
