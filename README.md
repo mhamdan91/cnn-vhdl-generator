@@ -41,7 +41,7 @@
 	* Generated files can be found in the same directoy in a folder called "generated_files".
 	
 ### Toturial
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SAnRrkk_XR0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=SAnRrkk_XR0&feature=youtu.be)
 	
 ### Publication - PLEASE CITE THIS PAPER IF YOU USE THIS WORK
 * [VHDL Generator for a High Performance Convolutional Neural Network FPGA-base Accelerator](http://ieeexplore.ieee.org/document/8279827/)
