@@ -45,5 +45,8 @@
 	
 ### Publication - PLEASE CITE THIS PAPER IF YOU USE THIS WORK
 * [VHDL Generator for a High Performance Convolutional Neural Network FPGA-base Accelerator](http://ieeexplore.ieee.org/document/8279827/)
+
+### Thesis - PLEASE CITE THIS PAPER IF YOU USE THIS WORK
+* [VHDL auto-generation tool for optimized hardware acceleration of convolutional neural networks on FPGA (VGT) ](https://lib.dr.iastate.edu/etd/16368/)
 ------------------------------------------
 # Created by: Muhammad K.A. Hamdan	 
