@@ -43,7 +43,7 @@
 ### Toturial
 [![VHDL Generation Tool](https://img.youtube.com/vi/SAnRrkk_XR0/0.jpg)](https://www.youtube.com/watch?v=SAnRrkk_XR0&feature=youtu.be)
 	
-### Publication - PLEASE CITE THIS PAPER IF YOU USE THIS WORK
+### Publication
 * [VHDL Generator for a High Performance Convolutional Neural Network FPGA-base Accelerator](http://ieeexplore.ieee.org/document/8279827/)
 
 ### Thesis - PLEASE CITE THIS PAPER IF YOU USE THIS WORK
