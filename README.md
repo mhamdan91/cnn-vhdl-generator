@@ -30,10 +30,10 @@
 	* Once you are done with configuration, click on "Validate Model Entries" to check the validity of your model
 	* You can save your manually configured model by clicking on "Save Configuration" button
 	* Click on "load weights and biases" button to load weights and biases
- * In Weights and Biases Incorpration windown, do the following:
+ * In Weights and Biases Incorpration window, do the following:
 	* Choose representation, weight size, bias size, and desired percision 
 	* Click on "Load Weights and Biases" button to load weights and biases, 
-	  you can use the sample random weights provided to you for the provided configuration file
+	  you may use the sample random weights provided to you for the provided configuration file for testing purposes
 	* The tool will automatically check and verify the loaded file to see if it matches the configuration file as well as chosen
 	  weight and bias sizes and representation 
 	* If loaded file passes the validation and checking test, the "Generate VHDL files" button will become enabled automatically
