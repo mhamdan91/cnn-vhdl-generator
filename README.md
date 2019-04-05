@@ -45,7 +45,7 @@
 	
 ### Publication
 * [IEEE VHDL Generator for a High Performance Convolutional Neural Network FPGA-base Accelerator](http://ieeexplore.ieee.org/document/8279827/)
-* [RG VHDL Generator for a High Performance Convolutional Neural Network FPGA-base Accelerator](https://www.researchgate.net/publication/322942712_VHDL_generator_for_a_high_performance_convolutional_neural_network_FPGA-based_accelerator)
+* [RG.  VHDL Generator for a High Performance Convolutional Neural Network FPGA-base Accelerator](https://www.researchgate.net/publication/322942712_VHDL_generator_for_a_high_performance_convolutional_neural_network_FPGA-based_accelerator)
 
 ### Thesis - PLEASE CITE THIS PAPER IF YOU USE THIS WORK
 * [VHDL auto-generation tool for optimized hardware acceleration of convolutional neural networks on FPGA (VGT) ](https://lib.dr.iastate.edu/etd/16368/)
