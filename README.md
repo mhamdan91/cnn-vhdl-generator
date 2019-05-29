@@ -51,7 +51,7 @@
 * [VHDL auto-generation tool for optimized hardware acceleration of convolutional neural networks on FPGA (VGT) ](https://lib.dr.iastate.edu/etd/16368/)
 
 ### PLEASE CITE THIS PAPER IF YOU USE THIS WORK
-'''
+```
 @inproceedings{hamdan2017vhdl,
   title={Vhdl generator for a high performance convolutional neural network fpga-based accelerator},
   author={Hamdan, Muhammad K and Rover, Diane T},
@@ -60,6 +60,6 @@
   year={2017},
   organization={IEEE}
 }
-'''
+```
 ------------------------------------------
 # Created by: Muhammad K.A. Hamdan	 
