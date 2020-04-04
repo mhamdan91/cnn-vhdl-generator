@@ -1,4 +1,4 @@
-Row_count,6
+Row_count,7
 Image_Size,13
 Image_type,Grayscale,8
 N_Classes,2
@@ -7,5 +7,6 @@ Convolution,3,2,0,1,ReLU,
 Pooling,3,2,0,2,Max-Pool,
 Convolution,5,3,0,1,ReLU,
 Pooling,5,2,0,2,Max-Pool,
-Fully-Connected,8,1,0,1,ReLU,
-Fully-Connected,2,1,0,1,ReLU,
+Flatten,1,1,0,1,ReLU,
+Fully-Connected,3,1,0,1,ReLU,
+Fully-Connected,5,1,0,1,ReLU,

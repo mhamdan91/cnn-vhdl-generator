@@ -1,12 +1,12 @@
 Row_count,7
-Image_Size,13
+Image_Size,15
 Image_type,Grayscale,8
 N_Classes,2
 Classifier,SoftMax
 Convolution,3,2,0,1,ReLU,
 Pooling,3,2,0,2,Max-Pool,
-Convolution,5,3,0,1,ReLU,
+Convolution,5,2,0,1,ReLU,
 Pooling,5,2,0,2,Max-Pool,
 Flatten,1,1,0,1,ReLU,
-Fully-Connected,3,1,0,1,ReLU,
+Fully-Connected,4,1,0,1,ReLU,
 Fully-Connected,5,1,0,1,ReLU,
