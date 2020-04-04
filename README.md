@@ -41,7 +41,7 @@
 	* Generated files can be found in the same directoy in a folder called "generated_files".
 	
 ### Toturial
-[![VHDL Generation Tool](https://img.youtube.com/vi/SAnRrkk_XR0/0.jpg)](https://youtu.be/MJUEAay7xpI)
+[![VHDL Generation Tool](https://img.youtube.com/vi/SAnRrkk_XR0/0.jpg)](https://youtu.be/AP4e3YS_tA4)
 	
 ### Publication
 * [IEEE VHDL Generator for a High Performance Convolutional Neural Network FPGA-base Accelerator](http://ieeexplore.ieee.org/document/8279827/)
