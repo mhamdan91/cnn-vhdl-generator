@@ -1,7 +1,7 @@
 ------------------------------------------HEADER START"------------------------------------------
 --THIS FILE WAS GENERATED USING HIGH LANGUAGE DESCRIPTION TOOL DESIGNED BY: MUHAMMAD HAMDAN
 --TOOL VERSION: 0.1
---GENERATION DATE/TIME:Sat Apr 04 01:57:36 CDT 2020
+--GENERATION DATE/TIME:Mon Apr 06 09:41:57 CDT 2020
 ------------------------------------------HEADER END"--------------------------------------------
 
 
@@ -12,9 +12,9 @@
 -- Module Name:    POOL - Behavioral 
 -- Project Name:   CNN accelerator
 -- Target Devices: Zynq-XC7Z020
--- Number of Total Operaiton: 30
+-- Number of Total Operaiton: 60
 -- Number of Clock Cycles: 3
--- Number of GOPS = 1.0
+-- Number of GOPS = 2.0
 -- Description: 
 -- Dependencies: 
 -- Revision:0.010 
@@ -33,20 +33,20 @@ GENERIC
 	constant BIAS_SIZE      : positive := 5;
 	constant MULT_SIZE      : positive := 5;
 	constant DIN_WIDTH      : positive := 5;	
-	constant IMAGE_WIDTH    : positive := 14;
-	constant IMAGE_SIZE     : positive := 225;	
+	constant IMAGE_WIDTH    : positive := 28;
+	constant IMAGE_SIZE     : positive := 1024;	
 	constant F_SIZE         : positive := 2;
 	constant WEIGHT_SIZE    : positive := 5;
 	constant BIASES_SIZE	: positive := 2;
 	constant PADDING        : positive := 1;
 	constant STRIDE         : positive := 2;
-	constant FEATURE_MAPS   : positive := 3;
+	constant FEATURE_MAPS   : positive := 6;
 	constant F_SIZEX2       : positive := 4;
-	constant VALID_CYCLES   : positive := 49;
-	constant VALID_LOCAL_PIX: positive := 7;
+	constant VALID_CYCLES   : positive := 196;
+	constant VALID_LOCAL_PIX: positive := 14;
 	constant MAX_DEPTH      : positive := 2;
-	constant INPUT_DEPTH    : positive := 2;
-	constant FIFO_DEPTH     : positive := 13;	
+	constant INPUT_DEPTH    : positive := 3;
+	constant FIFO_DEPTH     : positive := 27;	
 	constant USED_FIFOS     : positive := 1;	
 	constant MAX_1          : positive := 2;    	
 	constant MAX_2          : positive := 1;    	
@@ -57,6 +57,9 @@ port(
 	DIN_1_2         :IN std_logic_vector(DIN_WIDTH-1 downto 0);
 	DIN_2_2         :IN std_logic_vector(DIN_WIDTH-1 downto 0);
 	DIN_3_2         :IN std_logic_vector(DIN_WIDTH-1 downto 0);
+	DIN_4_2         :IN std_logic_vector(DIN_WIDTH-1 downto 0);
+	DIN_5_2         :IN std_logic_vector(DIN_WIDTH-1 downto 0);
+	DIN_6_2         :IN std_logic_vector(DIN_WIDTH-1 downto 0);
 	CLK,RST         :IN std_logic;
    	DIS_STREAM      :OUT std_logic; 					-- S_AXIS_TVALID  : Data in is valid
    	EN_STREAM       :IN std_logic; 						-- S_AXIS_TREADY  : Ready to accept data in 
@@ -65,6 +68,14 @@ port(
 	EN_LOC_STREAM_2 :IN std_logic;
 	DOUT_1_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
 	DOUT_2_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_3_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_4_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_5_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_6_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_7_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_8_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_9_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_10_2        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
 	INTERNAL_RST    :OUT std_logic
 	);	
 
@@ -123,6 +134,27 @@ signal TAIL_1_3  	   : natural range 0 to FIFO_DEPTH - 1;
 signal WriteEn_1_3	   : std_logic;
 signal ReadEn_1_3 	   : std_logic;
 signal Async_Mode_1_3  : boolean;
+------------------------------------------------------ FIFO_1 DECLARATION---------------------------------------------------------
+signal FIFO_ROW_1_4  	 : FIFO_Memory;
+signal HEAD_1_4 	   : natural range 0 to FIFO_DEPTH - 1;
+signal TAIL_1_4  	   : natural range 0 to FIFO_DEPTH - 1;
+signal WriteEn_1_4	   : std_logic;
+signal ReadEn_1_4 	   : std_logic;
+signal Async_Mode_1_4  : boolean;
+------------------------------------------------------ FIFO_1 DECLARATION---------------------------------------------------------
+signal FIFO_ROW_1_5  	 : FIFO_Memory;
+signal HEAD_1_5 	   : natural range 0 to FIFO_DEPTH - 1;
+signal TAIL_1_5  	   : natural range 0 to FIFO_DEPTH - 1;
+signal WriteEn_1_5	   : std_logic;
+signal ReadEn_1_5 	   : std_logic;
+signal Async_Mode_1_5  : boolean;
+------------------------------------------------------ FIFO_1 DECLARATION---------------------------------------------------------
+signal FIFO_ROW_1_6  	 : FIFO_Memory;
+signal HEAD_1_6 	   : natural range 0 to FIFO_DEPTH - 1;
+signal TAIL_1_6  	   : natural range 0 to FIFO_DEPTH - 1;
+signal WriteEn_1_6	   : std_logic;
+signal ReadEn_1_6 	   : std_logic;
+signal Async_Mode_1_6  : boolean;
 
 
 ------------------------------------------------------ DOUT NEXT LAYER SIGS DECLARATION---------------------------------------------------------
@@ -130,10 +162,21 @@ signal Async_Mode_1_3  : boolean;
 signal DOUT_BUF_1_2        : std_logic_vector(LOCAL_OUTPUT-1 downto 0);
 signal DOUT_BUF_2_2        : std_logic_vector(LOCAL_OUTPUT-1 downto 0);
 signal DOUT_BUF_3_2        : std_logic_vector(LOCAL_OUTPUT-1 downto 0);
+signal DOUT_BUF_4_2        : std_logic_vector(LOCAL_OUTPUT-1 downto 0);
+signal DOUT_BUF_5_2        : std_logic_vector(LOCAL_OUTPUT-1 downto 0);
+signal DOUT_BUF_6_2        : std_logic_vector(LOCAL_OUTPUT-1 downto 0);
 
 -------------------------------------- OUTPUT FROM LOWER COMPONENT SIGNALS--------------------------------------------------
 signal DOUT_1_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
 signal DOUT_2_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_3_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_4_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_5_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_6_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_7_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_8_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_9_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_10_3	: std_logic_vector(DOUT_WIDTH-1 downto 0);
 signal EN_STREAM_OUT_3	: std_logic;
 signal VALID_OUT_3          : std_logic;
 
@@ -143,10 +186,21 @@ COMPONENT CONV_LAYER_3
 			DIN_1_3			:IN std_logic_vector(LOCAL_OUTPUT-1 downto 0);
 			DIN_2_3			:IN std_logic_vector(LOCAL_OUTPUT-1 downto 0);
 			DIN_3_3			:IN std_logic_vector(LOCAL_OUTPUT-1 downto 0);
+			DIN_4_3			:IN std_logic_vector(LOCAL_OUTPUT-1 downto 0);
+			DIN_5_3			:IN std_logic_vector(LOCAL_OUTPUT-1 downto 0);
+			DIN_6_3			:IN std_logic_vector(LOCAL_OUTPUT-1 downto 0);
 			EN_STREAM_OUT_3	:OUT std_logic;
 			VALID_OUT_3	:OUT std_logic;
 			DOUT_1_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
 			DOUT_2_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+			DOUT_3_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+			DOUT_4_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+			DOUT_5_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+			DOUT_6_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+			DOUT_7_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+			DOUT_8_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+			DOUT_9_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+			DOUT_10_3        :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
 			EN_STREAM	:IN std_logic;
 			EN_LOC_STREAM_3	:IN std_logic
       			);
@@ -161,8 +215,19 @@ CONV_LYR_3 : CONV_LAYER_3
             DIN_1_3 	     => DOUT_BUF_1_2,
             DIN_2_3 	     => DOUT_BUF_2_2,
             DIN_3_3 	     => DOUT_BUF_3_2,
+            DIN_4_3 	     => DOUT_BUF_4_2,
+            DIN_5_3 	     => DOUT_BUF_5_2,
+            DIN_6_3 	     => DOUT_BUF_6_2,
             DOUT_1_3         => DOUT_1_3,
             DOUT_2_3         => DOUT_2_3,
+            DOUT_3_3         => DOUT_3_3,
+            DOUT_4_3         => DOUT_4_3,
+            DOUT_5_3         => DOUT_5_3,
+            DOUT_6_3         => DOUT_6_3,
+            DOUT_7_3         => DOUT_7_3,
+            DOUT_8_3         => DOUT_8_3,
+            DOUT_9_3         => DOUT_9_3,
+            DOUT_10_3         => DOUT_10_3,
             VALID_OUT_3      => VALID_OUT_3,
             EN_STREAM_OUT_3  => EN_STREAM_OUT_3,
             EN_LOC_STREAM_3  => EN_NXT_LYR_2,
@@ -194,6 +259,9 @@ if rising_edge(CLK) then
     DOUT_BUF_1_2<=(others => '0');
     DOUT_BUF_2_2<=(others => '0');
     DOUT_BUF_3_2<=(others => '0');
+    DOUT_BUF_4_2<=(others => '0');
+    DOUT_BUF_5_2<=(others => '0');
+    DOUT_BUF_6_2<=(others => '0');
 
 ----------------- FIFO_1 RESET---------------
     FIFO_ROW_1_1<= ((others=> (others=>'0')));HEAD_1_1<=0;
@@ -204,6 +272,15 @@ if rising_edge(CLK) then
 ----------------- FIFO_1 RESET---------------
     FIFO_ROW_1_3<= ((others=> (others=>'0')));HEAD_1_3<=0;
     WriteEn_1_3<= '0';ReadEn_1_3<= '0';Async_Mode_1_3<= false;
+----------------- FIFO_1 RESET---------------
+    FIFO_ROW_1_4<= ((others=> (others=>'0')));HEAD_1_4<=0;
+    WriteEn_1_4<= '0';ReadEn_1_4<= '0';Async_Mode_1_4<= false;
+----------------- FIFO_1 RESET---------------
+    FIFO_ROW_1_5<= ((others=> (others=>'0')));HEAD_1_5<=0;
+    WriteEn_1_5<= '0';ReadEn_1_5<= '0';Async_Mode_1_5<= false;
+----------------- FIFO_1 RESET---------------
+    FIFO_ROW_1_6<= ((others=> (others=>'0')));HEAD_1_6<=0;
+    WriteEn_1_6<= '0';ReadEn_1_6<= '0';Async_Mode_1_6<= false;
 
 
 ------------------------------------------------ PROCESS START------------------------------------------------------
@@ -234,12 +311,36 @@ if rising_edge(CLK) then
 
                 WINDOW(2,3)<=WINDOW(2,2);
 
+                ---------------------F-MAP4---------------------
+
+                WINDOW(3,0)<=DIN_4_2;
+                WINDOW(3,1)<=WINDOW(3,0);
+
+                WINDOW(3,3)<=WINDOW(3,2);
+
+                ---------------------F-MAP5---------------------
+
+                WINDOW(4,0)<=DIN_5_2;
+                WINDOW(4,1)<=WINDOW(4,0);
+
+                WINDOW(4,3)<=WINDOW(4,2);
+
+                ---------------------F-MAP6---------------------
+
+                WINDOW(5,0)<=DIN_6_2;
+                WINDOW(5,1)<=WINDOW(5,0);
+
+                WINDOW(5,3)<=WINDOW(5,2);
+
 
 
                 if PIXEL_COUNT=(F_SIZE-1) then
                   WriteEn_1_1 <= '1';
                   WriteEn_1_2 <= '1';
                   WriteEn_1_3 <= '1';
+                  WriteEn_1_4 <= '1';
+                  WriteEn_1_5 <= '1';
+                  WriteEn_1_6 <= '1';
                 else
                  PIXEL_COUNT<=PIXEL_COUNT+1;
                 end if;
@@ -331,6 +432,93 @@ if rising_edge(CLK) then
 			----------------- Enable Write to FIFO-1 END --------------
 
 
+	           ----------------- Enable Read FIFO-1 START -------------------
+				if (ReadEn_1_4 = '1') then 
+				 	  WINDOW(3,2) <= FIFO_ROW_1_4(TAIL_1_4);
+				if(TAIL_1_4 = FIFO_DEPTH-1) then
+				   	TAIL_1_4<=0;  -- Rest Tail
+				elsif (TAIL_1_4 = F_SIZE-1) then  Enable_MAX<='1';TAIL_1_4<=TAIL_1_4+1;
+				else
+				  	 TAIL_1_4<=TAIL_1_4+1;
+				end if;
+				end if;	
+			----------------- Enable Read FIFO_1 END -------------------
+
+			----------------- Enable Write to FIFO_1 START --------------	
+				if (WriteEn_1_4 = '1') then
+					FIFO_ROW_1_4(HEAD_1_4)<= WINDOW(3,1);
+				if (HEAD_1_4 = FIFO_DEPTH - 2 and Async_Mode_1_4 = false) then				 
+					ReadEn_1_4<='1';
+					HEAD_1_4 <= HEAD_1_4 + 1;
+					Async_Mode_1_4<= true;
+				else if (HEAD_1_4 = FIFO_DEPTH -1) then
+					HEAD_1_4<=0;  -- Rest Head
+				else
+					HEAD_1_4 <= HEAD_1_4 + 1;
+				end if;
+				end if;
+				end if;
+			----------------- Enable Write to FIFO-1 END --------------
+
+
+	           ----------------- Enable Read FIFO-1 START -------------------
+				if (ReadEn_1_5 = '1') then 
+				 	  WINDOW(4,2) <= FIFO_ROW_1_5(TAIL_1_5);
+				if(TAIL_1_5 = FIFO_DEPTH-1) then
+				   	TAIL_1_5<=0;  -- Rest Tail
+				elsif (TAIL_1_5 = F_SIZE-1) then  Enable_MAX<='1';TAIL_1_5<=TAIL_1_5+1;
+				else
+				  	 TAIL_1_5<=TAIL_1_5+1;
+				end if;
+				end if;	
+			----------------- Enable Read FIFO_1 END -------------------
+
+			----------------- Enable Write to FIFO_1 START --------------	
+				if (WriteEn_1_5 = '1') then
+					FIFO_ROW_1_5(HEAD_1_5)<= WINDOW(4,1);
+				if (HEAD_1_5 = FIFO_DEPTH - 2 and Async_Mode_1_5 = false) then				 
+					ReadEn_1_5<='1';
+					HEAD_1_5 <= HEAD_1_5 + 1;
+					Async_Mode_1_5<= true;
+				else if (HEAD_1_5 = FIFO_DEPTH -1) then
+					HEAD_1_5<=0;  -- Rest Head
+				else
+					HEAD_1_5 <= HEAD_1_5 + 1;
+				end if;
+				end if;
+				end if;
+			----------------- Enable Write to FIFO-1 END --------------
+
+
+	           ----------------- Enable Read FIFO-1 START -------------------
+				if (ReadEn_1_6 = '1') then 
+				 	  WINDOW(5,2) <= FIFO_ROW_1_6(TAIL_1_6);
+				if(TAIL_1_6 = FIFO_DEPTH-1) then
+				   	TAIL_1_6<=0;  -- Rest Tail
+				elsif (TAIL_1_6 = F_SIZE-1) then  Enable_MAX<='1';TAIL_1_6<=TAIL_1_6+1;
+				else
+				  	 TAIL_1_6<=TAIL_1_6+1;
+				end if;
+				end if;	
+			----------------- Enable Read FIFO_1 END -------------------
+
+			----------------- Enable Write to FIFO_1 START --------------	
+				if (WriteEn_1_6 = '1') then
+					FIFO_ROW_1_6(HEAD_1_6)<= WINDOW(5,1);
+				if (HEAD_1_6 = FIFO_DEPTH - 2 and Async_Mode_1_6 = false) then				 
+					ReadEn_1_6<='1';
+					HEAD_1_6 <= HEAD_1_6 + 1;
+					Async_Mode_1_6<= true;
+				else if (HEAD_1_6 = FIFO_DEPTH -1) then
+					HEAD_1_6<=0;  -- Rest Head
+				else
+					HEAD_1_6 <= HEAD_1_6 + 1;
+				end if;
+				end if;
+				end if;
+			----------------- Enable Write to FIFO-1 END --------------
+
+
 	      -------------------------------------------- Enable MAX WIN START --------------------------------------------				
 	
 		if Enable_MAX='1' then
@@ -352,6 +540,24 @@ if rising_edge(CLK) then
 			else  MAX_D_1(2,0)<= WINDOW(2,1);end if;
 			if  WINDOW(2,2) > WINDOW(2,3)  then  MAX_D_1(2,1)<= WINDOW(2,2);
 			else  MAX_D_1(2,1)<= WINDOW(2,3);end if;
+            ------------------FMAP even_3---------------
+
+			if  WINDOW(3,0) > WINDOW(3,1)  then  MAX_D_1(3,0)<= WINDOW(3,0);
+			else  MAX_D_1(3,0)<= WINDOW(3,1);end if;
+			if  WINDOW(3,2) > WINDOW(3,3)  then  MAX_D_1(3,1)<= WINDOW(3,2);
+			else  MAX_D_1(3,1)<= WINDOW(3,3);end if;
+            ------------------FMAP even_4---------------
+
+			if  WINDOW(4,0) > WINDOW(4,1)  then  MAX_D_1(4,0)<= WINDOW(4,0);
+			else  MAX_D_1(4,0)<= WINDOW(4,1);end if;
+			if  WINDOW(4,2) > WINDOW(4,3)  then  MAX_D_1(4,1)<= WINDOW(4,2);
+			else  MAX_D_1(4,1)<= WINDOW(4,3);end if;
+            ------------------FMAP even_5---------------
+
+			if  WINDOW(5,0) > WINDOW(5,1)  then  MAX_D_1(5,0)<= WINDOW(5,0);
+			else  MAX_D_1(5,0)<= WINDOW(5,1);end if;
+			if  WINDOW(5,2) > WINDOW(5,3)  then  MAX_D_1(5,1)<= WINDOW(5,2);
+			else  MAX_D_1(5,1)<= WINDOW(5,3);end if;
 
 			Enable_MX_2<='1';
 
@@ -368,6 +574,15 @@ if rising_edge(CLK) then
                 if  MAX_D_1(2,0) > MAX_D_1(2,1)  then  MAX_D_2(2,0)<= MAX_D_1(2,0);
                 else  MAX_D_2(2,0)<= MAX_D_1(2,1);end if;
 
+                if  MAX_D_1(3,0) > MAX_D_1(3,1)  then  MAX_D_2(3,0)<= MAX_D_1(3,0);
+                else  MAX_D_2(3,0)<= MAX_D_1(3,1);end if;
+
+                if  MAX_D_1(4,0) > MAX_D_1(4,1)  then  MAX_D_2(4,0)<= MAX_D_1(4,0);
+                else  MAX_D_2(4,0)<= MAX_D_1(4,1);end if;
+
+                if  MAX_D_1(5,0) > MAX_D_1(5,1)  then  MAX_D_2(5,0)<= MAX_D_1(5,0);
+                else  MAX_D_2(5,0)<= MAX_D_1(5,1);end if;
+
 			  EN_OUT_BUF<='1';
             end if; -- enable stage
 
@@ -382,6 +597,9 @@ if rising_edge(CLK) then
 			DOUT_BUF_1_2<=std_logic_vector(MAX_D_2(0,0));
 			DOUT_BUF_2_2<=std_logic_vector(MAX_D_2(1,0));
 			DOUT_BUF_3_2<=std_logic_vector(MAX_D_2(2,0));
+			DOUT_BUF_4_2<=std_logic_vector(MAX_D_2(3,0));
+			DOUT_BUF_5_2<=std_logic_vector(MAX_D_2(4,0));
+			DOUT_BUF_6_2<=std_logic_vector(MAX_D_2(5,0));
 			EN_NXT_LYR_2<='1';
 			FRST_TIM_EN_2<='1';
 			OUT_PIXEL_COUNT<=OUT_PIXEL_COUNT+1;
@@ -390,6 +608,9 @@ if rising_edge(CLK) then
            DOUT_BUF_1_2<=(others => '0');
            DOUT_BUF_2_2<=(others => '0');
            DOUT_BUF_3_2<=(others => '0');
+           DOUT_BUF_4_2<=(others => '0');
+           DOUT_BUF_5_2<=(others => '0');
+           DOUT_BUF_6_2<=(others => '0');
 
 		end if; -- end Validnxt layer
 
@@ -414,6 +635,14 @@ EN_STREAM_OUT_2<= EN_STREAM_OUT_3;
 VALID_OUT_2<= VALID_OUT_3;
 DOUT_1_2<=DOUT_1_3;
 DOUT_2_2<=DOUT_2_3;
+DOUT_3_2<=DOUT_3_3;
+DOUT_4_2<=DOUT_4_3;
+DOUT_5_2<=DOUT_5_3;
+DOUT_6_2<=DOUT_6_3;
+DOUT_7_2<=DOUT_7_3;
+DOUT_8_2<=DOUT_8_3;
+DOUT_9_2<=DOUT_9_3;
+DOUT_10_2<=DOUT_10_3;
 
 end Behavioral;
 ------------------------------ ARCHITECTURE DECLARATION - END---------------------------------------------

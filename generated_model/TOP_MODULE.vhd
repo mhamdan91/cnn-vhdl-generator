@@ -1,7 +1,7 @@
 ------------------------------------------HEADER START"------------------------------------------
 --THIS FILE WAS GENERATED USING HIGH LANGUAGE DESCRIPTION TOOL DESIGNED BY: MUHAMMAD HAMDAN
 --TOOL VERSION: 0.1
---GENERATION DATE/TIME:Sat Apr 04 01:57:36 CDT 2020
+--GENERATION DATE/TIME:Mon Apr 06 09:41:57 CDT 2020
 ------------------------------------------HEADER END"-------------------------------------------
 
 
@@ -62,8 +62,8 @@ use IEEE.std_logic_arith.all;
 entity accelerator is
 GENERIC( 
   	constant DATA_WIDTH 		: positive := 8;
-	constant IMAGE_WIDTH 		: positive := 15;
-	constant IMAGE_SIZE 		: positive := 225;
+	constant IMAGE_WIDTH 		: positive := 32;
+	constant IMAGE_SIZE 		: positive := 1024;
 	constant DOUT_WIDTH		: positive := 5 -- TO BE CALCULATED
 		); 
 
@@ -91,6 +91,14 @@ end accelerator;
 architecture Behavior of accelerator is
 signal DOUT_1_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
 signal DOUT_2_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_3_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_4_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_5_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_6_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_7_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_8_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_9_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
+signal DOUT_10_1          : std_logic_vector(DOUT_WIDTH-1 downto 0);
 signal EN_STREAM_OUT_1	 : std_logic;
 signal VALID_OUT_1       : std_logic;
 ---------------------------------- MAP NEXT LAYER - COMPONENTS START----------------------------------
@@ -105,6 +113,14 @@ COMPONENT CONV_LAYER_1
 	EN_LOC_STREAM_1     :IN std_logic;
 	DOUT_1_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
 	DOUT_2_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_3_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_4_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_5_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_6_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_7_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_8_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_9_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
+	DOUT_10_1            :OUT std_logic_vector(DOUT_WIDTH-1 downto 0);
 	INTERNAL_RST        :IN std_logic
       			);
 END COMPONENT CONV_LAYER_1;
@@ -119,12 +135,28 @@ CONV_LYR_1 : CONV_LAYER_1
            EN_STREAM         => M_AXIS_TREADY,		
            DOUT_1_1               => DOUT_1_1,
            DOUT_2_1               => DOUT_2_1,
+           DOUT_3_1               => DOUT_3_1,
+           DOUT_4_1               => DOUT_4_1,
+           DOUT_5_1               => DOUT_5_1,
+           DOUT_6_1               => DOUT_6_1,
+           DOUT_7_1               => DOUT_7_1,
+           DOUT_8_1               => DOUT_8_1,
+           DOUT_9_1               => DOUT_9_1,
+           DOUT_10_1               => DOUT_10_1,
            EN_STREAM_OUT_1        => EN_STREAM_OUT_1,
            VALID_OUT_1            => VALID_OUT_1
           );
 
 M_AXIS_TDATA(5 downto 0)<= DOUT_1_1;
 M_AXIS_TDATA(11 downto 6)<= DOUT_2_1;
+M_AXIS_TDATA(17 downto 12)<= DOUT_3_1;
+M_AXIS_TDATA(23 downto 18)<= DOUT_4_1;
+M_AXIS_TDATA(29 downto 24)<= DOUT_5_1;
+M_AXIS_TDATA(35 downto 30)<= DOUT_6_1;
+M_AXIS_TDATA(41 downto 36)<= DOUT_7_1;
+M_AXIS_TDATA(47 downto 42)<= DOUT_8_1;
+M_AXIS_TDATA(53 downto 48)<= DOUT_9_1;
+M_AXIS_TDATA(59 downto 54)<= DOUT_10_1;
 S_AXIS_TREADY<= EN_STREAM_OUT_1;
 M_AXIS_TVALID<= VALID_OUT_1;
  
