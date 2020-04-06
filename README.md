@@ -6,7 +6,7 @@
 + " System requirements:"
 + " Max needed RAM : 2GB "
 + " OS :  Any operating system supports Java 8 or higher"
-+ " JAva version :  8 or higher x64 distribution"
++ " Java version :  8 or higher x64 distribution"
 
 
 ### This version of the tool offers the following
