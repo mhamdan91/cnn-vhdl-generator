@@ -1,0 +1,73 @@
+{C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/MODEL_TB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/MODEL_TB.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity conv_layer_tb
+-- Compiling architecture behavior of conv_layer_tb
+
+} {} {}} {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_2.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity POOL_LAYER_2
+-- Compiling architecture Behavioral of POOL_LAYER_2
+
+} {} {}} {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_6.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_6.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FC_LAYER_6
+-- Compiling architecture Behavioral of FC_LAYER_6
+
+} {} {}} {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_3.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity CONV_LAYER_3
+-- Compiling architecture Behavioral of CONV_LAYER_3
+
+} {} {}} {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_7.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_7.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FC_LAYER_7
+-- Compiling architecture Behavioral of FC_LAYER_7
+
+} {} {}} {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_4.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity POOL_LAYER_4
+-- Compiling architecture Behavioral of POOL_LAYER_4
+
+} {} {}} {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_1.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity CONV_LAYER_1
+-- Compiling architecture Behavioral of CONV_LAYER_1
+
+} {} {}} {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_5.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LAYER_5.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity Flatten_LAYER_5
+-- Compiling architecture Behavioral of Flatten_LAYER_5
+
+} {} {}}

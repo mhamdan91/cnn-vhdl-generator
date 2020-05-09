@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu May  7 18:00:07 2020
+# Process ID: 28240
+# Current directory: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model.sim/sim_1/behav/xsim/xsim.dir/conv_layer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/mhamdan/Google -notrace
+couldn't read file "C:/Users/mhamdan/Google": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu May  7 18:00:07 2020...

@@ -1,0 +1,379 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+Econv_layer_1
+Z0 w1588985934
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet
+Z5 8C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_1.vhd
+Z6 FC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_1.vhd
+l0
+L39
+VKdCkD3J83V^QBI?X_QAGC1
+!s100 iKfO`7?Jf9@3[^XOd`6f53
+Z7 OP;C;10.4a;61
+32
+Z8 !s110 1588986128
+!i10b 1
+Z9 !s108 1588986128.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_1.vhd|
+Z11 !s107 C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_1.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Abehavioral
+R1
+R2
+R3
+DEx4 work 12 conv_layer_1 0 22 KdCkD3J83V^QBI?X_QAGC1
+l293
+L101
+Vi`oJCE6WclgSc?c3S<Wk92
+!s100 EQJI20C=6e0PnL?LB:P?T0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econv_layer_3
+R0
+R1
+R2
+R3
+R4
+Z14 8C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_3.vhd
+Z15 FC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_3.vhd
+l0
+L27
+VkiiWD_1hK_45=Y75k@H^T0
+!s100 cocgITNj@Q0`DCE=c<oh]1
+R7
+32
+R8
+!i10b 1
+R9
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_3.vhd|
+Z17 !s107 C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_3.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 12 conv_layer_3 0 22 kiiWD_1hK_45=Y75k@H^T0
+l1462
+L102
+V_9UUbYnAP[QFfc4D5EOT<2
+!s100 <QHY`cYcNYhDzMDoZ`Vii0
+R7
+32
+!s110 1588986130
+!i10b 1
+R9
+R16
+R17
+!i113 1
+R12
+R13
+Econv_layer_tb
+Z18 w1588985999
+R1
+R2
+R3
+R4
+Z19 8C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/MODEL_TB.vhd
+Z20 FC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/MODEL_TB.vhd
+l0
+L22
+VzY<>G2OkMJF=eVMVM5:6G1
+!s100 C0];>:l5>H_^I>dbgOjGT2
+R7
+32
+R8
+!i10b 1
+R9
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/MODEL_TB.vhd|
+Z22 !s107 C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/MODEL_TB.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 13 conv_layer_tb 0 22 zY<>G2OkMJF=eVMVM5:6G1
+l74
+L25
+V2W=aGm?AO9j]1[IVkG42z2
+!s100 `a?j^aWi>``<]7PUNRAhA3
+R7
+32
+R8
+!i10b 1
+R9
+R21
+R22
+!i113 1
+R12
+R13
+Efc_layer_6
+Z23 w1588985990
+R1
+R2
+R3
+R4
+Z24 8C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_6.vhd
+Z25 FC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_6.vhd
+l0
+L28
+Vl]nDUloF9_R[0heocnDRg1
+!s100 L`I8bTZFGeh^G]ozHB<W01
+R7
+32
+!s110 1588986133
+!i10b 1
+Z26 !s108 1588986133.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_6.vhd|
+Z28 !s107 C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_6.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 10 fc_layer_6 0 22 l]nDUloF9_R[0heocnDRg1
+l53585
+L500
+VBRjmI?:WESmD4Pf]z:HoD2
+!s100 lW9[Z^CFX81l7_H1ZZeFB1
+R7
+32
+!s110 1588987248
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R12
+R13
+Efc_layer_7
+Z29 w1588985992
+R1
+R2
+R3
+R4
+Z30 8C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_7.vhd
+Z31 FC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_7.vhd
+l0
+L28
+V]`fchWoLH[1W:eST_65ib1
+!s100 U@n6]APZ3eZ@O>;n544n42
+R7
+32
+!s110 1588989290
+!i10b 1
+Z32 !s108 1588989290.000000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_7.vhd|
+Z34 !s107 C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_7.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 10 fc_layer_7 0 22 ]`fchWoLH[1W:eST_65ib1
+l11877
+L216
+Vlo;;6L[=bY3z>i;3XbcS?0
+!s100 T7DDdk2c1IiHZlnh3z4W22
+R7
+32
+!s110 1588989322
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R12
+R13
+Efc_layer_8
+R29
+R1
+R2
+R3
+R4
+Z35 8C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_8.vhd
+Z36 FC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_8.vhd
+l0
+L28
+VGQaDDi=<0A99>UZO1VD_;2
+!s100 F;mCHM>n<IRL[1YI_2:dM0
+R7
+32
+Z37 !s110 1588989365
+!i10b 1
+Z38 !s108 1588989365.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_8.vhd|
+Z40 !s107 C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_8.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 10 fc_layer_8 0 22 GQaDDi=<0A99>UZO1VD_;2
+l1864
+L180
+VM5abmdFeIHDlbO20ojE1;3
+!s100 O8@CaB=`E>EziJQCmY5KT3
+R7
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R12
+R13
+Eflatten_layer_5
+R0
+R1
+R2
+R3
+R4
+Z41 8C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_5.vhd
+Z42 FC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_5.vhd
+l0
+L28
+V?@7g::11hMoLmHAzfN:j=1
+!s100 4=NhBVeN5U<gHRY=3aPUH3
+R7
+32
+Z43 !s110 1588986132
+!i10b 1
+Z44 !s108 1588986132.000000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_5.vhd|
+Z46 !s107 C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_5.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 15 flatten_layer_5 0 22 ?@7g::11hMoLmHAzfN:j=1
+l984
+L113
+V4QU^AcVaZ:S5W0S^FS6>j2
+!s100 gLVXT5GM@?7Fe?c9A>4e41
+R7
+32
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R12
+R13
+Epool_layer_2
+R0
+R1
+R2
+R3
+R4
+Z47 8C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_2.vhd
+Z48 FC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_2.vhd
+l0
+L27
+V1`M>^K[I52>;jk_[hH[Bg3
+!s100 =dB@YK]ED`8b0[e09o[@X0
+R7
+32
+R8
+!i10b 1
+R9
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_2.vhd|
+Z50 !s107 C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_2.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 12 pool_layer_2 0 22 1`M>^K[I52>;jk_[hH[Bg3
+l209
+L86
+VjhGXa[=8>ekfI1P`GB9o52
+!s100 hP3DE0ISmHF2]Q8lF^mJC2
+R7
+32
+R8
+!i10b 1
+R9
+R49
+R50
+!i113 1
+R12
+R13
+Epool_layer_4
+R0
+R1
+R2
+R3
+R4
+Z51 8C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_4.vhd
+Z52 FC:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_4.vhd
+l0
+L27
+VD84[]<m63?4K7^Q24j25J2
+!s100 z8`fP2VIYfV7AdC;B]HFf1
+R7
+32
+R43
+!i10b 1
+R44
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_4.vhd|
+Z54 !s107 C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Modelsim/LeNet/LAYER_4.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 12 pool_layer_4 0 22 D84[]<m63?4K7^Q24j25J2
+l309
+L96
+V7ImHYT31lb^P4CemXV`B71
+!s100 H6Y:Z76fIc[blo=GOJkdl0
+R7
+32
+R43
+!i10b 1
+R44
+R53
+R54
+!i113 1
+R12
+R13

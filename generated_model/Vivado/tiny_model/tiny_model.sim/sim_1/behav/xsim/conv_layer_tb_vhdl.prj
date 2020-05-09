@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd" \
+"../../../../tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd" \
+"../../../../tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd" \
+"../../../../tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd" \
+"../../../../tiny_model.srcs/sim_1/imports/Vivado/MODEL_TB.vhd" \
+
+# Do not sort compile order
+nosort

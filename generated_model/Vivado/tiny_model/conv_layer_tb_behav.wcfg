@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="conv_layer_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="conv_layer_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="95145631fs"></ZoomStartTime>
+      <ZoomEndTime time="592233010fs"></ZoomEndTime>
+      <Cursor1Time time="455172000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="287"></NameColumnWidth>
+      <ValueColumnWidth column_width="166"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="45" />
+   <wvobject fp_name="/conv_layer_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/DIN" type="array">
+      <obj_property name="ElementShortName">DIN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DIN[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/EN_STREAM" type="logic">
+      <obj_property name="ElementShortName">EN_STREAM</obj_property>
+      <obj_property name="ObjectShortName">EN_STREAM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/DIS_STREAM" type="logic">
+      <obj_property name="ElementShortName">DIS_STREAM</obj_property>
+      <obj_property name="ObjectShortName">DIS_STREAM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/EN_STREAM_OUT_1" type="logic">
+      <obj_property name="ElementShortName">EN_STREAM_OUT_1</obj_property>
+      <obj_property name="ObjectShortName">EN_STREAM_OUT_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/EN_LOC_STREAM_1" type="logic">
+      <obj_property name="ElementShortName">EN_LOC_STREAM_1</obj_property>
+      <obj_property name="ObjectShortName">EN_LOC_STREAM_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/INTERNAL_RST" type="logic">
+      <obj_property name="ElementShortName">INTERNAL_RST</obj_property>
+      <obj_property name="ObjectShortName">INTERNAL_RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/DOUT_1_1" type="array">
+      <obj_property name="ElementShortName">DOUT_1_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_1_1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/DOUT_2_1" type="array">
+      <obj_property name="ElementShortName">DOUT_2_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_2_1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/DOUT_WIDTH" type="other">
+      <obj_property name="ElementShortName">DOUT_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">DOUT_WIDTH</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/DIN_WIDTH" type="other">
+      <obj_property name="ElementShortName">DIN_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">DIN_WIDTH</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DIN" type="array">
+      <obj_property name="ElementShortName">DIN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DIN[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DIS_STREAM" type="logic">
+      <obj_property name="ElementShortName">DIS_STREAM</obj_property>
+      <obj_property name="ObjectShortName">DIS_STREAM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/EN_STREAM" type="logic">
+      <obj_property name="ElementShortName">EN_STREAM</obj_property>
+      <obj_property name="ObjectShortName">EN_STREAM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/EN_STREAM_OUT_1" type="logic">
+      <obj_property name="ElementShortName">EN_STREAM_OUT_1</obj_property>
+      <obj_property name="ObjectShortName">EN_STREAM_OUT_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/VALID_OUT_1" type="logic">
+      <obj_property name="ElementShortName">VALID_OUT_1</obj_property>
+      <obj_property name="ObjectShortName">VALID_OUT_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/EN_LOC_STREAM_1" type="logic">
+      <obj_property name="ElementShortName">EN_LOC_STREAM_1</obj_property>
+      <obj_property name="ObjectShortName">EN_LOC_STREAM_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DOUT_1_1" type="array">
+      <obj_property name="ElementShortName">DOUT_1_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_1_1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DOUT_2_1" type="array">
+      <obj_property name="ElementShortName">DOUT_2_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_2_1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DOUT_BUF_1_1" type="array">
+      <obj_property name="ElementShortName">DOUT_BUF_1_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_BUF_1_1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/DIN_1_2" type="array">
+      <obj_property name="ElementShortName">DIN_1_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DIN_1_2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/MAX_D_1" type="array">
+      <obj_property name="ElementShortName">MAX_D_1[0:0,0:1][4:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_D_1[0:0,0:1][4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/MAX_D_2" type="array">
+      <obj_property name="ElementShortName">MAX_D_2[0:0,0:0][4:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_D_2[0:0,0:0][4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/DOUT_BUF_1_2" type="array">
+      <obj_property name="ElementShortName">DOUT_BUF_1_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_BUF_1_2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_1_3" type="array">
+      <obj_property name="ElementShortName">DOUT_BUF_1_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_BUF_1_3[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_2_3" type="array">
+      <obj_property name="ElementShortName">DOUT_BUF_2_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_BUF_2_3[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_3_3" type="array">
+      <obj_property name="ElementShortName">DOUT_BUF_3_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_BUF_3_3[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_4_3" type="array">
+      <obj_property name="ElementShortName">DOUT_BUF_4_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_BUF_4_3[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/DIN_1_4" type="array">
+      <obj_property name="ElementShortName">DIN_1_4[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DIN_1_4[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/DIN_2_4" type="array">
+      <obj_property name="ElementShortName">DIN_2_4[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DIN_2_4[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/DIN_3_4" type="array">
+      <obj_property name="ElementShortName">DIN_3_4[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DIN_3_4[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/DIN_4_4" type="array">
+      <obj_property name="ElementShortName">DIN_4_4[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DIN_4_4[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_1" type="array">
+      <obj_property name="ElementShortName">MULT_1[0:1][9:0]</obj_property>
+      <obj_property name="ObjectShortName">MULT_1[0:1][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_2" type="array">
+      <obj_property name="ElementShortName">MULT_2[0:1][9:0]</obj_property>
+      <obj_property name="ObjectShortName">MULT_2[0:1][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_3" type="array">
+      <obj_property name="ElementShortName">MULT_3[0:1][9:0]</obj_property>
+      <obj_property name="ObjectShortName">MULT_3[0:1][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_4" type="array">
+      <obj_property name="ElementShortName">MULT_4[0:1][9:0]</obj_property>
+      <obj_property name="ObjectShortName">MULT_4[0:1][9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_1_2" type="array">
+      <obj_property name="ElementShortName">MULTS_1_2[0:1][4:0]</obj_property>
+      <obj_property name="ObjectShortName">MULTS_1_2[0:1][4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_2_1" type="array">
+      <obj_property name="ElementShortName">MULTS_2_1[0:1][4:0]</obj_property>
+      <obj_property name="ObjectShortName">MULTS_2_1[0:1][4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/ReLU_1" type="array">
+      <obj_property name="ElementShortName">ReLU_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ReLU_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/BIAS_1" type="array">
+      <obj_property name="ElementShortName">BIAS_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">BIAS_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group301" type="group">
+      <obj_property name="label">conv1_internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/INTERNAL_RST" type="logic">
+         <obj_property name="ElementShortName">INTERNAL_RST</obj_property>
+         <obj_property name="ObjectShortName">INTERNAL_RST</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/VALID_NXTLYR_PIX" type="other">
+         <obj_property name="ElementShortName">VALID_NXTLYR_PIX</obj_property>
+         <obj_property name="ObjectShortName">VALID_NXTLYR_PIX</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/PIXEL_COUNT" type="other">
+         <obj_property name="ElementShortName">PIXEL_COUNT</obj_property>
+         <obj_property name="ObjectShortName">PIXEL_COUNT</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/OUT_PIXEL_COUNT" type="other">
+         <obj_property name="ElementShortName">OUT_PIXEL_COUNT</obj_property>
+         <obj_property name="ObjectShortName">OUT_PIXEL_COUNT</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/EN_NXT_LYR_1" type="logic">
+         <obj_property name="ElementShortName">EN_NXT_LYR_1</obj_property>
+         <obj_property name="ObjectShortName">EN_NXT_LYR_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/FRST_TIM_EN_1" type="logic">
+         <obj_property name="ElementShortName">FRST_TIM_EN_1</obj_property>
+         <obj_property name="ObjectShortName">FRST_TIM_EN_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/Enable_MULT" type="logic">
+         <obj_property name="ElementShortName">Enable_MULT</obj_property>
+         <obj_property name="ObjectShortName">Enable_MULT</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/Enable_ADDER" type="logic">
+         <obj_property name="ElementShortName">Enable_ADDER</obj_property>
+         <obj_property name="ObjectShortName">Enable_ADDER</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/SIG_STRIDE" type="other">
+         <obj_property name="ElementShortName">SIG_STRIDE</obj_property>
+         <obj_property name="ObjectShortName">SIG_STRIDE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/PADDING_count" type="other">
+         <obj_property name="ElementShortName">PADDING_count</obj_property>
+         <obj_property name="ObjectShortName">PADDING_count</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/ROW_COUNT" type="other">
+         <obj_property name="ElementShortName">ROW_COUNT</obj_property>
+         <obj_property name="ObjectShortName">ROW_COUNT</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/WINDOW" type="array">
+         <obj_property name="ElementShortName">WINDOW[0:1,0:1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">WINDOW[0:1,0:1][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/Enable_STAGE_1" type="logic">
+         <obj_property name="ElementShortName">Enable_STAGE_1</obj_property>
+         <obj_property name="ObjectShortName">Enable_STAGE_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/Enable_STAGE_2" type="logic">
+         <obj_property name="ElementShortName">Enable_STAGE_2</obj_property>
+         <obj_property name="ObjectShortName">Enable_STAGE_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/MULT_1" type="array">
+         <obj_property name="ElementShortName">MULT_1[0:1,0:1][12:0]</obj_property>
+         <obj_property name="ObjectShortName">MULT_1[0:1,0:1][12:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/ADD_DEPTH_1" type="array">
+         <obj_property name="ElementShortName">ADD_DEPTH_1[0:1,0:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">ADD_DEPTH_1[0:1,0:0][4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/ADD_DEPTH_2" type="array">
+         <obj_property name="ElementShortName">ADD_DEPTH_2[0:0,0:0][4:0]</obj_property>
+         <obj_property name="ObjectShortName">ADD_DEPTH_2[0:0,0:0][4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/BIAS_1" type="array">
+         <obj_property name="ElementShortName">BIAS_1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">BIAS_1[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/ReLU_1" type="array">
+         <obj_property name="ElementShortName">ReLU_1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ReLU_1[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DOUT_BUF_1_1" type="array">
+         <obj_property name="ElementShortName">DOUT_BUF_1_1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">DOUT_BUF_1_1[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/Enable_BIAS" type="logic">
+         <obj_property name="ElementShortName">Enable_BIAS</obj_property>
+         <obj_property name="ObjectShortName">Enable_BIAS</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/Enable_ReLU" type="logic">
+         <obj_property name="ElementShortName">Enable_ReLU</obj_property>
+         <obj_property name="ObjectShortName">Enable_ReLU</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/FIFO_ROW_1" type="array">
+         <obj_property name="ElementShortName">FIFO_ROW_1[0:3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_ROW_1[0:3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/HEAD_1" type="other">
+         <obj_property name="ElementShortName">HEAD_1</obj_property>
+         <obj_property name="ObjectShortName">HEAD_1</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/TAIL_1" type="other">
+         <obj_property name="ElementShortName">TAIL_1</obj_property>
+         <obj_property name="ObjectShortName">TAIL_1</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/WriteEn_1" type="logic">
+         <obj_property name="ElementShortName">WriteEn_1</obj_property>
+         <obj_property name="ObjectShortName">WriteEn_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/ReadEn_1" type="logic">
+         <obj_property name="ElementShortName">ReadEn_1</obj_property>
+         <obj_property name="ObjectShortName">ReadEn_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/Async_Mode_1" type="other">
+         <obj_property name="ElementShortName">Async_Mode_1</obj_property>
+         <obj_property name="ObjectShortName">Async_Mode_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DOUT_1_2" type="array">
+         <obj_property name="ElementShortName">DOUT_1_2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">DOUT_1_2[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DOUT_2_2" type="array">
+         <obj_property name="ElementShortName">DOUT_2_2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">DOUT_2_2[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/EN_STREAM_OUT_2" type="logic">
+         <obj_property name="ElementShortName">EN_STREAM_OUT_2</obj_property>
+         <obj_property name="ObjectShortName">EN_STREAM_OUT_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/VALID_OUT_2" type="logic">
+         <obj_property name="ElementShortName">VALID_OUT_2</obj_property>
+         <obj_property name="ObjectShortName">VALID_OUT_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/PRECISION" type="other">
+         <obj_property name="ElementShortName">PRECISION</obj_property>
+         <obj_property name="ObjectShortName">PRECISION</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/WHOLE" type="other">
+         <obj_property name="ElementShortName">WHOLE</obj_property>
+         <obj_property name="ObjectShortName">WHOLE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DECIMAL" type="other">
+         <obj_property name="ElementShortName">DECIMAL</obj_property>
+         <obj_property name="ObjectShortName">DECIMAL</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/PAD" type="other">
+         <obj_property name="ElementShortName">PAD</obj_property>
+         <obj_property name="ObjectShortName">PAD</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DOUT_WIDTH" type="other">
+         <obj_property name="ElementShortName">DOUT_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">DOUT_WIDTH</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/BIAS_SIZE" type="other">
+         <obj_property name="ElementShortName">BIAS_SIZE</obj_property>
+         <obj_property name="ObjectShortName">BIAS_SIZE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/MULT_SIZE" type="other">
+         <obj_property name="ElementShortName">MULT_SIZE</obj_property>
+         <obj_property name="ObjectShortName">MULT_SIZE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/MULT_SUM_SIZE" type="other">
+         <obj_property name="ElementShortName">MULT_SUM_SIZE</obj_property>
+         <obj_property name="ObjectShortName">MULT_SUM_SIZE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/DIN_WIDTH" type="other">
+         <obj_property name="ElementShortName">DIN_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">DIN_WIDTH</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/BASE_DIN_WIDTH" type="other">
+         <obj_property name="ElementShortName">BASE_DIN_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">BASE_DIN_WIDTH</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/IMAGE_WIDTH" type="other">
+         <obj_property name="ElementShortName">IMAGE_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">IMAGE_WIDTH</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/IMAGE_SIZE" type="other">
+         <obj_property name="ElementShortName">IMAGE_SIZE</obj_property>
+         <obj_property name="ObjectShortName">IMAGE_SIZE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/F_SIZE" type="other">
+         <obj_property name="ElementShortName">F_SIZE</obj_property>
+         <obj_property name="ObjectShortName">F_SIZE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/WEIGHT_SIZE" type="other">
+         <obj_property name="ElementShortName">WEIGHT_SIZE</obj_property>
+         <obj_property name="ObjectShortName">WEIGHT_SIZE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/BIASES_SIZE" type="other">
+         <obj_property name="ElementShortName">BIASES_SIZE</obj_property>
+         <obj_property name="ObjectShortName">BIASES_SIZE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/PADDING" type="other">
+         <obj_property name="ElementShortName">PADDING</obj_property>
+         <obj_property name="ObjectShortName">PADDING</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/STRIDE" type="other">
+         <obj_property name="ElementShortName">STRIDE</obj_property>
+         <obj_property name="ObjectShortName">STRIDE</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/FEATURE_MAPS" type="other">
+         <obj_property name="ElementShortName">FEATURE_MAPS</obj_property>
+         <obj_property name="ObjectShortName">FEATURE_MAPS</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/VALID_CYCLES" type="other">
+         <obj_property name="ElementShortName">VALID_CYCLES</obj_property>
+         <obj_property name="ObjectShortName">VALID_CYCLES</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/STRIDE_CYCLES" type="other">
+         <obj_property name="ElementShortName">STRIDE_CYCLES</obj_property>
+         <obj_property name="ObjectShortName">STRIDE_CYCLES</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/VALID_LOCAL_PIX" type="other">
+         <obj_property name="ElementShortName">VALID_LOCAL_PIX</obj_property>
+         <obj_property name="ObjectShortName">VALID_LOCAL_PIX</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/ADD_TREE_DEPTH" type="other">
+         <obj_property name="ElementShortName">ADD_TREE_DEPTH</obj_property>
+         <obj_property name="ObjectShortName">ADD_TREE_DEPTH</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/INPUT_DEPTH" type="other">
+         <obj_property name="ElementShortName">INPUT_DEPTH</obj_property>
+         <obj_property name="ObjectShortName">INPUT_DEPTH</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/FIFO_DEPTH" type="other">
+         <obj_property name="ElementShortName">FIFO_DEPTH</obj_property>
+         <obj_property name="ObjectShortName">FIFO_DEPTH</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/USED_FIFOS" type="other">
+         <obj_property name="ElementShortName">USED_FIFOS</obj_property>
+         <obj_property name="ObjectShortName">USED_FIFOS</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/ADD_1" type="other">
+         <obj_property name="ElementShortName">ADD_1</obj_property>
+         <obj_property name="ObjectShortName">ADD_1</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/ADD_2" type="other">
+         <obj_property name="ElementShortName">ADD_2</obj_property>
+         <obj_property name="ObjectShortName">ADD_2</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/LOCAL_OUTPUT" type="other">
+         <obj_property name="ElementShortName">LOCAL_OUTPUT</obj_property>
+         <obj_property name="ObjectShortName">LOCAL_OUTPUT</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/FMAP_1" type="array">
+         <obj_property name="ElementShortName">FMAP_1[0:1,0:1][4:0]</obj_property>
+         <obj_property name="ObjectShortName">FMAP_1[0:1,0:1][4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/BIAS_VAL_1" type="array">
+         <obj_property name="ElementShortName">BIAS_VAL_1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">BIAS_VAL_1[1:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/conv_layer_tb/CONV_LYR_1/POOL_LYR_2/MAX_D_1" type="array">
+         <obj_property name="ElementShortName">MAX_D_1[0:0,0:1][4:0]</obj_property>
+         <obj_property name="ObjectShortName">MAX_D_1[0:0,0:1][4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

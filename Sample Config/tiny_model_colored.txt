@@ -1,0 +1,9 @@
+Row_count,4
+Image_Size,5
+Image_type,Colored,24
+N_Classes,2
+Classifier,SoftMax
+Convolution,1,2,0,1,ReLU,
+Pooling,1,2,0,2,Max-Pool,
+Flatten,1,1,0,1,ReLU,
+Fully-Connected,2,1,0,1,ReLU,

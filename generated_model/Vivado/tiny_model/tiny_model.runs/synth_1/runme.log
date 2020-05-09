@@ -1,0 +1,667 @@
+
+*** Running vivado
+    with args -log CONV_LAYER_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CONV_LAYER_1.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source CONV_LAYER_1.tcl -notrace
+Command: synth_design -top CONV_LAYER_1 -part xcku5p-sfvb784-1LV-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13644 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 363.211 ; gain = 96.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CONV_LAYER_1' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:90]
+	Parameter PRECISION bound to: 5 - type: integer 
+	Parameter WHOLE bound to: 2 - type: integer 
+	Parameter DECIMAL bound to: 3 - type: integer 
+	Parameter PAD bound to: 4 - type: integer 
+	Parameter DOUT_WIDTH bound to: 5 - type: integer 
+	Parameter BIAS_SIZE bound to: 5 - type: integer 
+	Parameter MULT_SIZE bound to: 13 - type: integer 
+	Parameter MULT_SUM_SIZE bound to: 6 - type: integer 
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter BASE_DIN_WIDTH bound to: 8 - type: integer 
+	Parameter IMAGE_WIDTH bound to: 5 - type: integer 
+	Parameter IMAGE_SIZE bound to: 25 - type: integer 
+	Parameter F_SIZE bound to: 2 - type: integer 
+	Parameter WEIGHT_SIZE bound to: 5 - type: integer 
+	Parameter BIASES_SIZE bound to: 2 - type: integer 
+	Parameter PADDING bound to: 1 - type: integer 
+	Parameter STRIDE bound to: 1 - type: integer 
+	Parameter FEATURE_MAPS bound to: 1 - type: integer 
+	Parameter VALID_CYCLES bound to: 16 - type: integer 
+	Parameter STRIDE_CYCLES bound to: 4 - type: integer 
+	Parameter VALID_LOCAL_PIX bound to: 4 - type: integer 
+	Parameter ADD_TREE_DEPTH bound to: 2 - type: integer 
+	Parameter INPUT_DEPTH bound to: 1 - type: integer 
+	Parameter FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter USED_FIFOS bound to: 1 - type: integer 
+	Parameter ADD_1 bound to: 2 - type: integer 
+	Parameter ADD_2 bound to: 1 - type: integer 
+	Parameter LOCAL_OUTPUT bound to: 5 - type: integer 
+WARNING: [Synth 8-5640] Port 'dis_stream' is missing in component declaration [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:153]
+WARNING: [Synth 8-5640] Port 'internal_rst' is missing in component declaration [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:153]
+INFO: [Synth 8-3491] module 'POOL_LAYER_2' declared at 'C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:27' bound to instance 'POOL_LYR_2' of component 'POOL_LAYER_2' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'POOL_LAYER_2' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:73]
+	Parameter PRECISION bound to: 5 - type: integer 
+	Parameter DOUT_WIDTH bound to: 5 - type: integer 
+	Parameter BIAS_SIZE bound to: 5 - type: integer 
+	Parameter MULT_SIZE bound to: 5 - type: integer 
+	Parameter DIN_WIDTH bound to: 5 - type: integer 
+	Parameter IMAGE_WIDTH bound to: 4 - type: integer 
+	Parameter IMAGE_SIZE bound to: 25 - type: integer 
+	Parameter F_SIZE bound to: 2 - type: integer 
+	Parameter WEIGHT_SIZE bound to: 5 - type: integer 
+	Parameter BIASES_SIZE bound to: 2 - type: integer 
+	Parameter PADDING bound to: 1 - type: integer 
+	Parameter STRIDE bound to: 2 - type: integer 
+	Parameter FEATURE_MAPS bound to: 1 - type: integer 
+	Parameter F_SIZEX2 bound to: 4 - type: integer 
+	Parameter VALID_CYCLES bound to: 4 - type: integer 
+	Parameter VALID_LOCAL_PIX bound to: 2 - type: integer 
+	Parameter MAX_DEPTH bound to: 2 - type: integer 
+	Parameter INPUT_DEPTH bound to: 1 - type: integer 
+	Parameter FIFO_DEPTH bound to: 3 - type: integer 
+	Parameter USED_FIFOS bound to: 1 - type: integer 
+	Parameter MAX_1 bound to: 2 - type: integer 
+	Parameter MAX_2 bound to: 1 - type: integer 
+	Parameter LOCAL_OUTPUT bound to: 5 - type: integer 
+WARNING: [Synth 8-5640] Port 'dis_stream' is missing in component declaration [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:123]
+WARNING: [Synth 8-5640] Port 'internal_rst' is missing in component declaration [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:123]
+INFO: [Synth 8-3491] module 'Flatten_LAYER_3' declared at 'C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:28' bound to instance 'Flatten_LYR_3' of component 'Flatten_LAYER_3' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'Flatten_LAYER_3' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:78]
+	Parameter PRECISION bound to: 5 - type: integer 
+	Parameter DOUT_WIDTH bound to: 5 - type: integer 
+	Parameter BIAS_SIZE bound to: 5 - type: integer 
+	Parameter PF_X2_SIZE bound to: 4 - type: integer 
+	Parameter MULT_SIZE bound to: 10 - type: integer 
+	Parameter DIN_WIDTH bound to: 5 - type: integer 
+	Parameter IMAGE_WIDTH bound to: 2 - type: integer 
+	Parameter IMAGE_SIZE bound to: 25 - type: integer 
+	Parameter F_SIZE bound to: 2 - type: integer 
+	Parameter WEIGHT_SIZE bound to: 5 - type: integer 
+	Parameter BIASES_SIZE bound to: 2 - type: integer 
+	Parameter PADDING bound to: 1 - type: integer 
+	Parameter STRIDE bound to: 1 - type: integer 
+	Parameter FEATURE_MAPS bound to: 1 - type: integer 
+	Parameter VALID_CYCLES bound to: 4 - type: integer 
+	Parameter STRIDE_CYCLES bound to: 1 - type: integer 
+	Parameter VALID_LOCAL_PIX bound to: 2 - type: integer 
+	Parameter ADD_TREE_DEPTH bound to: 2 - type: integer 
+	Parameter INPUT_DEPTH bound to: 1 - type: integer 
+	Parameter FIFO_DEPTH bound to: 1 - type: integer 
+	Parameter MULT_SUM_D_1 bound to: 1 - type: integer 
+	Parameter MULT_SUM_SIZE_1 bound to: 6 - type: integer 
+	Parameter ADD_1 bound to: 2 - type: integer 
+	Parameter ADD_SIZE_1 bound to: 6 - type: integer 
+	Parameter ADD_2 bound to: 1 - type: integer 
+	Parameter ADD_SIZE_2 bound to: 6 - type: integer 
+	Parameter LOCAL_OUTPUT bound to: 5 - type: integer 
+WARNING: [Synth 8-5640] Port 'dis_stream' is missing in component declaration [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:111]
+WARNING: [Synth 8-5640] Port 'internal_rst' is missing in component declaration [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:111]
+INFO: [Synth 8-3491] module 'FC_LAYER_4' declared at 'C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:28' bound to instance 'FC_LYR_4' of component 'FC_LAYER_4' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'FC_LAYER_4' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:82]
+	Parameter PRECISION bound to: 5 - type: integer 
+	Parameter WHOLE bound to: 2 - type: integer 
+	Parameter DECIMAL bound to: 3 - type: integer 
+	Parameter DOUT_WIDTH bound to: 5 - type: integer 
+	Parameter BIAS_SIZE bound to: 5 - type: integer 
+	Parameter MULT_SIZE bound to: 10 - type: integer 
+	Parameter BASE_DIN_WIDTH bound to: 5 - type: integer 
+	Parameter DIN_WIDTH bound to: 5 - type: integer 
+	Parameter IMAGE_WIDTH bound to: 1 - type: integer 
+	Parameter IMAGE_SIZE bound to: 25 - type: integer 
+	Parameter F_SIZE bound to: 1 - type: integer 
+	Parameter PF_X2_SIZE bound to: 4 - type: integer 
+	Parameter WEIGHT_SIZE bound to: 5 - type: integer 
+	Parameter BIASES_SIZE bound to: 2 - type: integer 
+	Parameter PADDING bound to: 1 - type: integer 
+	Parameter STRIDE bound to: 1 - type: integer 
+	Parameter FEATURE_MAPS bound to: 2 - type: integer 
+	Parameter VALID_CYCLES bound to: 4 - type: integer 
+	Parameter VALID_LOCAL_PIX bound to: 2 - type: integer 
+	Parameter ADD_TREE_DEPTH bound to: 1 - type: integer 
+	Parameter INPUT_DEPTH bound to: 2 - type: integer 
+	Parameter INNER_PXL_SUM bound to: 1 - type: integer 
+	Parameter SUM_PEXILS bound to: 9 - type: integer 
+	Parameter MULT_SUM_D_1 bound to: 2 - type: integer 
+	Parameter MULT_SUM_SIZE_1 bound to: 6 - type: integer 
+	Parameter MULT_SUM_D_2 bound to: 1 - type: integer 
+	Parameter MULT_SUM_SIZE_2 bound to: 6 - type: integer 
+	Parameter LOCAL_OUTPUT bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element PIXEL_COUNT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:163]
+WARNING: [Synth 8-6014] Unused sequential element EN_NXT_LYR_4_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:164]
+WARNING: [Synth 8-6014] Unused sequential element FRST_TIM_EN_4_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:164]
+WARNING: [Synth 8-6014] Unused sequential element Enable_MULT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:165]
+WARNING: [Synth 8-6014] Unused sequential element Enable_ADDER_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:165]
+WARNING: [Synth 8-6014] Unused sequential element PADDING_count_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element ROW_COUNT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element COUNT_PIX_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element ReLU_1_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:169]
+WARNING: [Synth 8-6014] Unused sequential element ReLU_2_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:170]
+WARNING: [Synth 8-6014] Unused sequential element SUM_PIXELS_1_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element SUM_PIXELS_2_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:173]
+WARNING: [Synth 8-6014] Unused sequential element SUM_PIXELS_3_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element SUM_PIXELS_4_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_1_3_reg[0] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:180]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_1_3_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:180]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_1_4_reg[0] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:181]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_1_4_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:181]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_2_2_reg[0] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:184]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_2_2_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:184]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_2_3_reg[0] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:185]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_2_3_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:185]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_2_4_reg[0] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_2_4_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:186]
+WARNING: [Synth 8-3848] Net DIS_STREAM in module/entity FC_LAYER_4 does not have driver. [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:68]
+WARNING: [Synth 8-3848] Net EN_STREAM_OUT_4 in module/entity FC_LAYER_4 does not have driver. [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:70]
+WARNING: [Synth 8-3848] Net VALID_OUT_4 in module/entity FC_LAYER_4 does not have driver. [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'FC_LAYER_4' (1#1) [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element PADDING_count_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:161]
+WARNING: [Synth 8-6014] Unused sequential element ROW_COUNT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:161]
+WARNING: [Synth 8-3848] Net DIS_STREAM in module/entity Flatten_LAYER_3 does not have driver. [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'Flatten_LAYER_3' (2#1) [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:78]
+WARNING: [Synth 8-6014] Unused sequential element Enable_ADDER_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:165]
+WARNING: [Synth 8-6014] Unused sequential element PADDING_count_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element ROW_COUNT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:166]
+WARNING: [Synth 8-3848] Net DIS_STREAM in module/entity POOL_LAYER_2 does not have driver. [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'POOL_LAYER_2' (3#1) [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element Enable_ADDER_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:196]
+WARNING: [Synth 8-6014] Unused sequential element PADDING_count_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:197]
+WARNING: [Synth 8-6014] Unused sequential element ROW_COUNT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:197]
+WARNING: [Synth 8-6014] Unused sequential element ReLU_1_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:205]
+WARNING: [Synth 8-3848] Net DIS_STREAM in module/entity CONV_LAYER_1 does not have driver. [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'CONV_LAYER_1' (4#1) [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:90]
+WARNING: [Synth 8-3331] design FC_LAYER_4 has unconnected port DIS_STREAM
+WARNING: [Synth 8-3331] design FC_LAYER_4 has unconnected port EN_STREAM_OUT_4
+WARNING: [Synth 8-3331] design FC_LAYER_4 has unconnected port VALID_OUT_4
+WARNING: [Synth 8-3331] design Flatten_LAYER_3 has unconnected port DIS_STREAM
+WARNING: [Synth 8-3331] design POOL_LAYER_2 has unconnected port DIS_STREAM
+WARNING: [Synth 8-3331] design CONV_LAYER_1 has unconnected port DIS_STREAM
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 405.293 ; gain = 138.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 405.293 ; gain = 138.797
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcku5p-sfvb784-1LV-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/constrs_2/new/new_constrains.xdc]
+Finished Parsing XDC File [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/constrs_2/new/new_constrains.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1255.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1255.375 ; gain = 988.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-sfvb784-1LV-i
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1255.375 ; gain = 988.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1255.375 ; gain = 988.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'MULT_1_reg[1][9:0]' into 'MULT_1_reg[0][9:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:172]
+INFO: [Synth 8-4471] merging register 'MULT_2_reg[1][9:0]' into 'MULT_2_reg[0][9:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:173]
+INFO: [Synth 8-4471] merging register 'MULT_3_reg[1][9:0]' into 'MULT_3_reg[0][9:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:174]
+INFO: [Synth 8-4471] merging register 'MULT_4_reg[1][9:0]' into 'MULT_4_reg[0][9:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:175]
+INFO: [Synth 8-4471] merging register 'MULTS_1_1_reg[1][4:0]' into 'MULTS_1_1_reg[0][4:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:178]
+INFO: [Synth 8-4471] merging register 'MULTS_1_2_reg[1][4:0]' into 'MULTS_1_2_reg[0][4:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:179]
+INFO: [Synth 8-4471] merging register 'MULTS_2_1_reg[1][4:0]' into 'MULTS_2_1_reg[0][4:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:183]
+INFO: [Synth 8-4471] merging register 'BIAS_2_reg[4:0]' into 'BIAS_1_reg[4:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:170]
+INFO: [Synth 8-4471] merging register 'DOUT_BUF_2_4_reg[4:0]' into 'DOUT_BUF_1_4_reg[4:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:170]
+WARNING: [Synth 8-6014] Unused sequential element DOUT_BUF_2_4_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:170]
+WARNING: [Synth 8-6014] Unused sequential element BIAS_2_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:170]
+WARNING: [Synth 8-6014] Unused sequential element MULT_1_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element MULT_2_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:173]
+WARNING: [Synth 8-6014] Unused sequential element MULT_3_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element MULT_4_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_1_1_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_1_2_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:179]
+WARNING: [Synth 8-6014] Unused sequential element MULTS_2_1_reg[1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:183]
+INFO: [Synth 8-5544] ROM "SIG_STRIDE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SIG_STRIDE_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:166]
+INFO: [Synth 8-5544] ROM "PIXEL_COUNT" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Enable_ONEHOT" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SIG_STRIDE_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:161]
+INFO: [Synth 8-4471] merging register 'Async_Mode_1_1_reg' into 'ReadEn_1_1_reg' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:176]
+WARNING: [Synth 8-6014] Unused sequential element Async_Mode_1_1_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:176]
+INFO: [Synth 8-5544] ROM "PIXEL_COUNT" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "SIG_STRIDE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "FIFO_ROW_1_1_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIFO_ROW_1_1_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIFO_ROW_1_1_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WriteEn_1_1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SIG_STRIDE_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:166]
+INFO: [Synth 8-4471] merging register 'Async_Mode_1_reg' into 'ReadEn_1_reg' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:209]
+WARNING: [Synth 8-6014] Unused sequential element Async_Mode_1_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:209]
+INFO: [Synth 8-5546] ROM "PIXEL_COUNT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "SIG_STRIDE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIFO_ROW_1_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIFO_ROW_1_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIFO_ROW_1_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIFO_ROW_1_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "WriteEn_1" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element PIXEL_COUNT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:194]
+WARNING: [Synth 8-6014] Unused sequential element OUT_PIXEL_COUNT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:194]
+WARNING: [Synth 8-6014] Unused sequential element SIG_STRIDE_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:197]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1255.375 ; gain = 988.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 15    
+	   2 Input      3 Bit       Adders := 7     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 12    
+	                5 Bit    Registers := 36    
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 41    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CONV_LAYER_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 12    
+	                5 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 1     
+Module FC_LAYER_4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                5 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Flatten_LAYER_3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 9     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module POOL_LAYER_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 13    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 5     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'WINDOW_reg[0,0][7:0]' into 'WINDOW_reg[0,0][7:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:200]
+INFO: [Synth 8-4471] merging register 'WINDOW_reg[0,0][7:0]' into 'WINDOW_reg[0,0][7:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:200]
+INFO: [Synth 8-4471] merging register 'WINDOW_reg[1,0][7:0]' into 'WINDOW_reg[1,0][7:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:200]
+INFO: [Synth 8-4471] merging register 'WINDOW_reg[0,1][7:0]' into 'WINDOW_reg[0,1][7:0]' [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/INTERNAL_RST_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:164]
+WARNING: [Synth 8-6014] Unused sequential element POOL_LYR_2/Flatten_LYR_3/INTERNAL_RST_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:161]
+WARNING: [Synth 8-6014] Unused sequential element POOL_LYR_2/INTERNAL_RST_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element WINDOW_reg[0,0] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element WINDOW_reg[0,0] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element WINDOW_reg[1,0] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element WINDOW_reg[0,1] was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/SIG_STRIDE_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_4.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element POOL_LYR_2/Flatten_LYR_3/SIG_STRIDE_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_3.vhd:161]
+WARNING: [Synth 8-6014] Unused sequential element POOL_LYR_2/SIG_STRIDE_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_2.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element PIXEL_COUNT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:194]
+WARNING: [Synth 8-6014] Unused sequential element SIG_STRIDE_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:197]
+WARNING: [Synth 8-6014] Unused sequential element OUT_PIXEL_COUNT_reg was removed.  [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.srcs/sources_1/imports/tiny_model/LAYER_1.vhd:194]
+WARNING: [Synth 8-3331] design CONV_LAYER_1 has unconnected port DIS_STREAM
+WARNING: [Synth 8-3331] design CONV_LAYER_1 has unconnected port EN_STREAM_OUT_1
+WARNING: [Synth 8-3331] design CONV_LAYER_1 has unconnected port VALID_OUT_1
+INFO: [Synth 8-3886] merging instance 'POOL_LYR_2/VALID_NXTLYR_PIX_reg[2]' (FDRE) to 'POOL_LYR_2/VALID_NXTLYR_PIX_reg[1]'
+INFO: [Synth 8-3886] merging instance 'POOL_LYR_2/VALID_NXTLYR_PIX_reg[0]' (FDRE) to 'POOL_LYR_2/VALID_NXTLYR_PIX_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\POOL_LYR_2/VALID_NXTLYR_PIX_reg[1] )
+INFO: [Synth 8-3886] merging instance 'POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_1_2_reg[0][2]' (FDRE) to 'POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_1_2_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_1_1_reg[0][2]' (FDRE) to 'POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_1_1_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_1_2_reg[0][3]' (FDRE) to 'POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_1_2_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_1_1_reg[0][3]' (FDRE) to 'POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULTS_1_1_reg[0][4]'
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/MAX_D_2_reg[0,0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/MAX_D_2_reg[0,0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/MAX_D_2_reg[0,0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/DOUT_BUF_1_2_reg[2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/DOUT_BUF_1_2_reg[1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/DOUT_BUF_1_2_reg[0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[0,0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[0,0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[0,0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_4_3_reg[2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_4_3_reg[1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_4_3_reg[0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_4_reg[0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_4_reg[0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_4_reg[0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[0,1][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[0,1][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[0,1][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_3_3_reg[2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_3_3_reg[1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_3_3_reg[0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_3_reg[0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_3_reg[0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_3_reg[0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[1,0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[1,0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[1,0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_2_3_reg[2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_2_3_reg[1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_2_3_reg[0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_2_reg[0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_2_reg[0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_2_reg[0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[1,1][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[1,1][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/WINDOW_1_reg[1,1][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_1_3_reg[2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_1_3_reg[1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/DOUT_BUF_1_3_reg[0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_1_reg[0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_1_reg[0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/MULT_1_reg[0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/VALID_NXTLYR_PIX_reg[1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,0][10]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,0][9]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,0][8]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (FIFO_ROW_1_reg[3][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (FIFO_ROW_1_reg[3][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (FIFO_ROW_1_reg[2][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (FIFO_ROW_1_reg[2][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (FIFO_ROW_1_reg[1][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (FIFO_ROW_1_reg[1][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (FIFO_ROW_1_reg[0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (FIFO_ROW_1_reg[0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (WINDOW_reg[1,0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (WINDOW_reg[1,0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[0,1][10]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[0,1][9]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[0,1][8]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[0,1][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[0,1][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[0,1][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,1][10]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,1][9]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,1][8]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,1][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,1][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[1,1][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (WINDOW_reg[1,1][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (WINDOW_reg[1,1][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (WINDOW_reg[1,1][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[0,0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[0,0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (MULT_1_reg[0,0][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/MAX_D_1_reg[0,1][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/MAX_D_1_reg[0,1][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/MAX_D_1_reg[0,1][0]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/MAX_D_1_reg[0,0][2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/MAX_D_1_reg[0,0][1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/MAX_D_1_reg[0,0][0]) is unused and will be removed from module CONV_LAYER_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1255.375 ; gain = 988.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1811.445 ; gain = 1544.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1832.730 ; gain = 1566.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/VALID_NXTLYR_PIX_reg[2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (POOL_LYR_2/Flatten_LYR_3/FC_LYR_4/VALID_NXTLYR_PIX_reg[1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (SIG_STRIDE_reg[4]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (SIG_STRIDE_reg[3]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (SIG_STRIDE_reg[2]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (SIG_STRIDE_reg[1]) is unused and will be removed from module CONV_LAYER_1.
+WARNING: [Synth 8-3332] Sequential element (SIG_STRIDE_reg[0]) is unused and will be removed from module CONV_LAYER_1.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1836.738 ; gain = 1570.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1836.738 ; gain = 1570.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1836.738 ; gain = 1570.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1836.738 ; gain = 1570.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1836.738 ; gain = 1570.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1836.738 ; gain = 1570.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1836.738 ; gain = 1570.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY8 |     1|
+|3     |LUT1   |    15|
+|4     |LUT2   |    35|
+|5     |LUT3   |    27|
+|6     |LUT4   |    35|
+|7     |LUT5   |    42|
+|8     |LUT6   |    51|
+|9     |FDRE   |   263|
+|10    |FDSE   |     3|
+|11    |IBUF   |    12|
+|12    |OBUF   |    11|
+|13    |OBUFT  |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+----------------+------+
+|      |Instance          |Module          |Cells |
++------+------------------+----------------+------+
+|1     |top               |                |   499|
+|2     |  POOL_LYR_2      |POOL_LAYER_2    |   268|
+|3     |    Flatten_LYR_3 |Flatten_LAYER_3 |   136|
+|4     |      FC_LYR_4    |FC_LAYER_4      |    81|
++------+------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1836.738 ; gain = 1570.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 123 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 1836.738 ; gain = 720.160
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1836.738 ; gain = 1570.242
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 174 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1855.434 ; gain = 1601.461
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.runs/synth_1/CONV_LAYER_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CONV_LAYER_1_utilization_synth.rpt -pb CONV_LAYER_1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.144 . Memory (MB): peak = 1855.434 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri May  8 22:26:40 2020...

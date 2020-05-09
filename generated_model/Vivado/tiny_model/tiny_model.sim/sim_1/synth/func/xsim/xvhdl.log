@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model.sim/sim_1/synth/func/xsim/conv_layer_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FC_LAYER_4
+INFO: [VRFC 10-307] analyzing entity Flatten_LAYER_3
+INFO: [VRFC 10-307] analyzing entity POOL_LAYER_2
+INFO: [VRFC 10-307] analyzing entity CONV_LAYER_1

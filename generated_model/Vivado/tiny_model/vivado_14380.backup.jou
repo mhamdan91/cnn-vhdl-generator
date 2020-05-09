@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri May  8 22:08:28 2020
+# Process ID: 14380
+# Current directory: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22092 C:\Users\mhamdan\Google Drive\PhD classes\My_other_stuff\cnn_vhdl_generator\generated_model\Vivado\tiny_model\tiny_model.xpr
+# Log file: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/vivado.log
+# Journal file: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.xpr}
+update_compile_order -fileset sources_1
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2017} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+current_run [get_runs impl_2]
+set_property part xcku5p-sfvb784-1LV-i [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+open_run impl_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_constraints

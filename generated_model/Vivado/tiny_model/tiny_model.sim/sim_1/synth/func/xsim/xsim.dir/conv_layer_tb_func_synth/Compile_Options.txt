@@ -1,0 +1,1 @@
+-wto "823afca107444587a22e75f76eab2359" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "conv_layer_tb_func_synth" "xil_defaultlib.conv_layer_tb" -log "elaborate.log" 

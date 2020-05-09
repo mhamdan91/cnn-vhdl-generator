@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"conv_layer_tb_func_synth.vhd" \
+"../../../../../tiny_model.srcs/sim_1/imports/Vivado/MODEL_TB.vhd" \
+
+# Do not sort compile order
+nosort

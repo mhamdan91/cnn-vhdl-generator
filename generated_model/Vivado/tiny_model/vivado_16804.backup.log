@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri May  8 22:23:15 2020
+# Process ID: 16804
+# Current directory: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18224 C:\Users\mhamdan\Google Drive\PhD classes\My_other_stuff\cnn_vhdl_generator\generated_model\Vivado\tiny_model\tiny_model.xpr
+# Log file: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/vivado.log
+# Journal file: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1051.910 ; gain = 229.910
+update_compile_order -fileset sources_1
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xcku5p-sfvb784-1LV-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/.Xil/Vivado-16804-Jr-Mhamdan/dcp1/CONV_LAYER_1.xdc]
+Finished Parsing XDC File [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/.Xil/Vivado-16804-Jr-Mhamdan/dcp1/CONV_LAYER_1.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 1621.051 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.171 . Memory (MB): peak = 1621.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 12 instances
+
+open_run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:29 . Memory (MB): peak = 2015.473 ; gain = 963.563
+reset_run synth_1
+save_constraints_as constrs_2
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_2]
+launch_runs impl_2 -jobs 8
+[Fri May  8 22:25:26 2020] Launched synth_1...
+Run output will be captured here: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.runs/synth_1/runme.log
+[Fri May  8 22:25:26 2020] Launched impl_2...
+Run output will be captured here: C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/tiny_model.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/.Xil/Vivado-16804-Jr-Mhamdan/dcp3/CONV_LAYER_1.xdc]
+Finished Parsing XDC File [C:/Users/mhamdan/Google Drive/PhD classes/My_other_stuff/cnn_vhdl_generator/generated_model/Vivado/tiny_model/.Xil/Vivado-16804-Jr-Mhamdan/dcp3/CONV_LAYER_1.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 3480.980 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 3480.980 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 3480.980 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  8 22:30:00 2020...
