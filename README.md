@@ -45,7 +45,7 @@
 		* Click on "load weights and biases" button to load weights and biases
 	3- In Weights and Biases Incorpration window, do the following:
 		* Choose representation, weight size, bias size, and whole(digits) and decimal point (fraction) for fixed-point representation. If weight precision is 8
-		then you could specify 3 whole bits and 5 fractional ones to represent a floating number as a fixed-point. Input (images) decimals must match weight decimals. 
+		  then you could specify 3 whole bits and 5 fractional ones to represent a floating number as a fixed-point. Input (images) decimals must match weight decimals. 
 		* Click on "Load Weights and Biases" button to load weights and biases, 
 		  you may use the sample random weights provided to you for the provided configuration file for testing purposes
 		* The tool will automatically check and verify the loaded file to see if it matches the configuration file as well as chosen
